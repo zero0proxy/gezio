@@ -46,6 +46,9 @@
           <li class="nav-item"><a href="car.html" class="nav-link">Cars</a></li>
 
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+
+          <li class="nav-item"><a href="index-ru.html" class="nav-link"
+              style="color: #f1b8c4; font-weight: bold;">RU</a></li>
         </ul>
       </div>
     </div>
@@ -76,14 +79,14 @@
           <div class="row no-gutters">
             <div class="col-md-4 d-flex align-items-center">
               <form action="#" class="request-form ftco-animate bg-primary" id="booking-form">
-                <h2>Оформление аренды</h2>
+                <h2>Car Booking</h2>
 
                 <div class="form-group">
-                  <input type="text" class="form-control" id="client-name" placeholder="Имя и Фамилия" required>
+                  <input type="text" class="form-control" id="client-name" placeholder="Name and surname" required>
                 </div>
                 <div class="d-flex">
                   <div class="form-group mr-2">
-                    <input type="tel" class="form-control" id="client-phone" placeholder="Телефон" required>
+                    <input type="tel" class="form-control" id="client-phone" placeholder="Phone" required>
                   </div>
                   <div class="form-group ml-2">
                     <input type="email" class="form-control" id="client-email" placeholder="Email" required>
@@ -91,35 +94,34 @@
                 </div>
 
                 <div class="form-group">
-                  <input type="text" class="form-control" id="pickup-loc" placeholder="Место подачи авто" required>
+                  <input type="text" class="form-control" id="pickup-loc" placeholder="Pickup location" required>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="dropoff-loc"
-                    placeholder="Место возврата (если отличается)">
+                  <input type="text" class="form-control" id="dropoff-loc" placeholder="Return location (if different)">
                 </div>
 
                 <div class="d-flex">
                   <div class="form-group mr-2">
-                    <input type="text" class="form-control date-picker" id="pickup-date" placeholder="Дата подачи"
+                    <input type="text" class="form-control date-picker" id="pickup-date" placeholder="Pickup date"
                       autocomplete="off" required>
                   </div>
                   <div class="form-group ml-2">
-                    <input type="text" class="form-control date-picker" id="dropoff-date" placeholder="Дата возврата"
+                    <input type="text" class="form-control date-picker" id="dropoff-date" placeholder="Return date"
                       autocomplete="off" required>
                   </div>
                 </div>
 
                 <div class="form-group mt-3">
-                  <p class="text-white mb-1" style="font-size: 14px;" id="selected-car-label">Автомобиль не выбран</p>
+                  <p class="text-white mb-1" style="font-size: 14px;" id="selected-car-label">Car not selected</p>
                   <button type="button" id="btn-select-car"
                     class="btn btn-white btn-outline-white py-2 px-4 d-block w-100"
                     style="color: #fff; border-color: #fff;">
-                    Выбрать автомобиль
+                    Select a car
                   </button>
                 </div>
 
                 <div class="form-group mt-4">
-                  <input type="submit" id="submit-btn" value="Забронировать" class="btn btn-secondary py-3 px-4 w-100">
+                  <input type="submit" id="submit-btn" value="Book a car" class="btn btn-secondary py-3 px-4 w-100">
                 </div>
               </form>
             </div>

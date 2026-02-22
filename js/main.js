@@ -368,7 +368,7 @@ $(document).ready(function () {
 			dropoffDate: $('#dropoff-date').val()
 		};
 		sessionStorage.setItem('bookingData', JSON.stringify(bookingData));
-		window.location.href = 'car.html';
+		window.location.href = window.location.pathname.includes('-ru.html') ? 'car-ru.html' : 'car.html';
 	});
 
 	// 5. Отправка заявки с РЕАЛЬНЫМИ данными
@@ -440,6 +440,6 @@ $(document).ready(function () {
 			carName = $(this).closest('.car-wrap').find('h2').text();
 		}
 		sessionStorage.setItem('selectedCar', carName);
-		window.location.href = 'index.html';
+		window.location.href = window.location.pathname.includes('-ru.html') ? 'index-ru.html' : 'index.html';
 	});
 });
